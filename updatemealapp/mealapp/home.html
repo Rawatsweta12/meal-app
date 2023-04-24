@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meals App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meals App</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Meal Name:</label>
+                
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select class="form-control" id="category">
+                    <option value="">Select a category</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dinner">Fast Food</option>
+                    
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addMeal()">Add Meal</button>
+        </form>
+        <hr>
+        <div>
+            <h2>Meals</h2>
+            <hr>
+            <h3>Breakfast</h3>           
+            <img src="image/greentea.jfif" alt="">
+            <img src="image/milk.jfif" alt="">
+            <img src="image/fruits.jfif" alt="">
+            <img src="image/fr.jfif" alt="">
+            <hr>
+            <h3>Lunch</h3>
+            <img src="image/roti.jfif" alt="">
+            <img src="image/chawal.jfif" alt="">
+            <img src="image/daal.jfif" alt="">
+            <img src="image/salad.jfif" alt="">
+            <hr>
+            <h3>Dinner</h3>
+            <img src="image/egg.jfif" alt="">
+            <img src="image/full.jfif" alt="">
+            <img src="image/fruits.jfif" alt="">
+            <img src="image/wine.jfif" alt="">
+            <hr>
+            <h3>Fast Food</h3>
+            <img src="image/panner tika.jfif" alt="">
+            <img src="image/pizza.jfif" alt="">
+            <img src="image/friesmomos.jfif" alt="">
+            <img src="image/burger.jfif" alt="">
+            <hr>
+        
+            <div class="form-group">
+                <label for="search">Search by name:</label>
+                <input type="text" class="form-control" id="search">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="searchMeals()">Search</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="meals">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="paven.js"></script>
+</body>
+
+</html>
